@@ -1,0 +1,172 @@
+{
+	"env": {
+		"browser": true,
+		"commonjs": true,
+		"es6": true
+	},
+	"plugins": [
+		"@typescript-eslint",
+		"unused-imports"
+	],
+	"extends": [
+		"eslint:recommended",
+		"airbnb-base",
+		"plugin:@typescript-eslint/recommended"
+	],
+	"globals": {
+		"Atomics": "readonly",
+		"SharedArrayBuffer": "readonly"
+	},
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaVersion": 2018
+	},
+	"root": true,
+	"rules": {
+		"no-shadow": "off",
+		"no-throw-literal": "off",
+		"no-unused-vars": "off",
+		"unused-imports/no-unused-imports": "error",
+		"unused-imports/no-unused-vars": [
+			"error",
+			{
+				"vars": "all",
+				"varsIgnorePattern": "^_",
+				"args": "after-used",
+				"argsIgnorePattern": "^_"
+			}
+		],
+		"prefer-const": "off",
+		"semi": [
+			2,
+			"never"
+		],
+		"indent": [
+			2,
+			"tab"
+		],
+		"linebreak-style": [
+			"error",
+			"unix"
+		],
+		"space-before-blocks": [
+			"error",
+			"always"
+		],
+		"quotes": [
+			"error",
+			"single"
+		],
+		"no-tabs": 0,
+		"no-empty": "error",
+		"class-methods-use-this": "off",
+		"no-param-reassign": 0,
+		"max-len": [
+			"error",
+			{
+				"code": 120,
+				"ignoreComments": true,
+				"ignoreUrls": true,
+				"ignoreStrings": true,
+				"ignoreTemplateLiterals": true,
+				"ignoreRegExpLiterals": true
+			}
+		],
+		"no-console": 0,
+		"no-extra-semi": "error",
+		"array-bracket-spacing": "error",
+		"no-inline-comments": "error",
+		"no-underscore-dangle": 0,
+		"import/no-extraneous-dependencies": 0,
+		"import/no-unresolved": 0,
+		"import/extensions": 0,
+		"func-names": 0,
+		"import/no-dynamic-require": 0,
+		"no-restricted-syntax": 0,
+		"no-new": [
+			"error"
+		],
+		"camelcase": 0,
+		"no-await-in-loop": 0,
+		"operator-linebreak": [
+			"error",
+			"after"
+		],
+		"no-trailing-spaces": "error",
+		"comma-dangle": "error",
+		"sort-imports": [
+			"error",
+			{
+				"ignoreCase": true,
+				"ignoreDeclarationSort": true
+			}
+		],
+		"import/order": [
+			1,
+			{
+				"groups": [
+					"builtin",
+					"external",
+					"internal",
+					[
+						"index",
+						"sibling",
+						"parent",
+						"object"
+					]
+				],
+				"pathGroups": [
+					{
+						"pattern": "controller/**",
+						"group": "internal"
+					},
+					{
+						"pattern": "services/**",
+						"group": "internal"
+					},
+					{
+						"pattern": "models/**",
+						"group": "internal"
+					},
+					{
+						"pattern": "mysql/**",
+						"group": "internal"
+					},
+					{
+						"pattern": "interfaces/**",
+						"group": "internal"
+					},
+					{
+						"pattern": "utils/**",
+						"group": "internal"
+					},
+					{
+						"pattern": "logger/**",
+						"group": "internal"
+					},
+					{
+						"pattern": "abis/**",
+						"group": "internal"
+					},
+					{
+						"pattern": "credentials/**",
+						"group": "internal"
+					},
+					{
+						"pattern": "static/**",
+						"group": "internal",
+						"position": "after"
+					}
+				],
+				"pathGroupsExcludedImportTypes": [
+					"internal"
+				],
+				"alphabetize": {
+					"order": "asc",
+					"caseInsensitive": true
+				},
+				"newlines-between": "always"
+			}
+		]
+	}
+}

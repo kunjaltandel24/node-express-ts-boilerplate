@@ -1,0 +1,33 @@
+{
+	"editor.tabSize": 2,
+	"files.encoding": "utf8",
+	"editor.insertSpaces": true,
+	"files.eol": "\n",
+	"files.trimTrailingWhitespace": true,
+	"files.insertFinalNewline": true,
+	"editor.wordWrap": "wordWrapColumn",
+	"editor.wordWrapColumn": 120,
+
+
+	"prettier.trailingComma": "all",
+	"prettier.endOfLine": "lf",
+	"prettier.semi": false,
+	"prettier.singleQuote": true,
+	"prettier.bracketSpacing": true,
+	"editor.defaultFormatter": null,
+	"typescript.preferences.importModuleSpecifier": "non-relative",
+	"editor.formatOnSave": true,
+	"editorconfig.generateAuto": true,
+	"eslint.alwaysShowStatus": true,
+	"eslint.format.enable": true,
+	"eslint.options": {
+		"configFile": "/explore/.eslintrc.json",
+		"overrideConfigFile": "/explore/.eslintrc.json"
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	}
+}

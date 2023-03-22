@@ -1,0 +1,32 @@
+# editorconfig.org
+root = true
+
+[*]
+indent_style = tab
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+max_line_length = 120
+
+ij_javascript_space_after_colon = true
+ij_javascript_spaces_within_imports = true
+ij_javascript_use_semicolon_after_statement = false
+ij_javascript_spaces_within_object_literal_braces = true
+ij_javascript_spaces_within_object_type_braces = true
+ij_javascript_use_double_quotes = false
+ij_javascript_enforce_trailing_comma = whenmultiline
+ij_javascript_import_prefer_absolute_path = true
+
+ij_typescript_space_after_colon = true
+ij_typescript_spaces_within_imports = true
+ij_typescript_use_semicolon_after_statement = false
+ij_typescript_spaces_within_object_literal_braces = true
+ij_typescript_spaces_within_object_type_braces = true
+ij_typescript_use_double_quotes = false
+ij_typescript_enforce_trailing_comma = whenmultiline
+ij_typescript_import_prefer_absolute_path = true
+
+[*.md]
+trim_trailing_whitespace = false
